@@ -34,8 +34,9 @@
 ![Image](lab1-key-setup.png)
 
 ![Image](lab1-key-setup2.png)
-> ## Optimizing Remote Running
 
+> ## Optimizing Remote Running
 * I run command in quotes “ls” at the end of an ssh command which can directly run it on the remote server, then exit. 
 * I combine commands in a line which can save keystrokes.
+
 ![Image](lab1-opt.png)
