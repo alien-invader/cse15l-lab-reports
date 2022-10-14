@@ -52,16 +52,14 @@ class WhereAmI {
 ![Image](lab1/lab1-opt.png)
 * I combine commands in a line which can save keystrokes.
 * I run command in quotes “ls” at the end of an ssh command which can directly run it on the remote server, log in, and list the home directory, then exit.
+
 ```
 ssh cs15lfa22jk@ieng6.ucsd.edu "ls"
-=
-ssh cs15lfa22jk@ieng6.ucsd.edu
+= ssh cs15lfa22jk@ieng6.ucsd.edu
 ls
 
-
 cp WhereAmI.java OtherMain.java; javac OtherMain.java; java WhereAmI
-=
-cp WhereAmI.java OtherMain.java
+= cp WhereAmI.java OtherMain.java
 javac OtherMain.java
 java WhereAmI
 ```
