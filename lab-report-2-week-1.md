@@ -30,6 +30,7 @@
   }
 }
 ```
+
 * `scp` stands for secure copy, meaning that securely move files from the client to the server. 
 * Run the command `scp WhereAmI.java cs15lfa22jk@ieng6.ucsd.edu:~/` and enter password for logging in.
 * Log into ieng6 with ssh and use `ls` to see if the file now exist on the server or not. Then javac and java, we can see that it is in Linux, cs15lfa22jk.
@@ -57,8 +58,8 @@ ssh cs15lfa22jk@ieng6.ucsd.edu "ls"
 =
 ssh cs15lfa22jk@ieng6.ucsd.edu
 ls
-```
-```
+
+
 cp WhereAmI.java OtherMain.java; javac OtherMain.java; java WhereAmI
 =
 cp WhereAmI.java OtherMain.java
