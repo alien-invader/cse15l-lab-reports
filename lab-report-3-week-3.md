@@ -1,4 +1,4 @@
-# Lab 3
+# Lab 2 Servers and Bugs
 ## Part 1 Simplest Search Engine
 
 * In SearchEngine.java, implement a web server that tracks a list of strings. It supports a path for adding a new string to the list, and a path for querying the list of strings and returning a list of all strings that have a given substring.
