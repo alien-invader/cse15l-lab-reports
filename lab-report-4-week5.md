@@ -40,7 +40,7 @@ grep -r searches for the string "2020" in `./biomed` as I specified after the st
 
 Command: 
 
-    elainege@Elaines-MacBook-Air-2 technical % grep -r 2020 biomed 
+    grep -r 2020 biomed 
 
 Output:
 
@@ -57,7 +57,16 @@ grep -r searches for the string "Manhattan" in all its directories and subdirect
 
 Command:
 
-    elainege@Elaines-MacBook-Air-2 technical % grep -r Manhattan
+    grep -r Manhattan
+
+Same as:
+    
+    grep -r "Manhattan"
+
+Same as: 
+
+    grep -r Manhattan government plos biomed 911report
+
 Ouput:
 
     ./government/Gen_Account_Office/d01376g.txt:Chase Manhattan Bank
@@ -103,6 +112,70 @@ Ouput:
     ./911report/chapter-10.txt:                    health advice to give about the air quality in Lower Manhattan in the vicinity 
 
 
-## Perform a search ignore the case sensitivity
+## `grep -i` : Perform a search ignore the case sensitivity
+
+Example 4:
+The command searches for the world "SOCiodemographic" which is the same as "sociodemographic" or "SOCIODEMOGRAPHIC" as -i is case insensitive, which is useful as if we don't know whether it is lower or upper case that the author puts in. 
+
+Command:
+
+    grep -i SOCiodemographic biomed/1476-069X-2-7.txt
+
+Output:
+
+    consumption habits and select sociodemographic
+    on lifetime fish consumption and select sociodemographic
+
+Example 5:
+
+The format is grep -i "STRing" "Filename, cannot be directory". It cannot search thru directory unlike grep -r. This could be useful if we know which file we are working at. 
+
+Command:
+
+    grep -i hi biomed
+
+Output:
+
+    grep: biomed: Is a directory
+
+
+Example 6:
+
+The output is blocks of textes of where the word is located that. It is useful if the word is capitalized. If we are using usual command without -r which are case sensitive, we could miss words that are in the begining of a sentence.
+
+Command:
+
+    grep -i "NEW" 911report/chapter-5.txt
+
+Output:
+
+        chasing him, he left Qatar for good and fled to Afghanistan, where he renewed his
+    KSM knew that the successful staging of such an attack would require personnel,
+    From KSM's perspective, Bin Ladin was in the process of consolidating his new
+        and then to Afghanistan to renew contacts with Bin Ladin and his colleagues. Though
+        States. He continued to make himself useful, collecting news articles and helping
+        economic and "Jewish" targets in New York City. Furthermore, during the summer of
+        Sungkar's newly formed terrorist organization, the JI.
+    Hambali's newfound interest in striking against the United States manifested itself
+        and refused. After several days of indoctrination that included a barrage of news
+        Nashiri, knew all the details of the operation. When Nashiri had difficulty finding
+        and Yousef reportedly brainstormed together about what drove the U.S. economy. New
+    Certainly KSM was not alone in contemplating new kinds of terrorist operations. A
+        Arabia, where his father knew Bin Ladin, Abdullah Azzam, and Omar Abdel Rahman (the
+        the cover story that he would be visiting a medical clinic to obtain a new
+    Khallad had originally scheduled his trip in order to receive a new prosthesis at a
+        had formed a close-knit group as students in Hamburg, Germany. The new recruits had
+        Jewish movement centered in New York City that supposedly controlled the financial
+        to be anything remarkable about his family or early background. A friend who knew
+        that year, it seems unlikely that they already knew about the planes operation; no
+        neither government apparently knew he was operating in Germany in late 1999. When
+    The new recruits also learned that an individual named Rabia al Makki (Nawaf al
+        deficiencies of their initial team, Hazmi and Mihdhar. The new recruits from Germany
+        (where he acquired a new passport and a U.S. visa), Saudi Arabia, Bahrain, and one
+        like Zammar, whom they knew attracted unwanted attention from the authorities.
+        new passports, each claiming that his old passport had been lost. Presumably they
+    Some individual donors surely knew, and others did not, the ultimate destination of
+        program. Rather, Bin Ladin selectively provided startup funds to new groups or money
+
 
 ## Count the lines where strings are matched with -c option
