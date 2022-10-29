@@ -114,7 +114,8 @@ Ouput:
 
 ## `grep -i` : Perform a search ignore the case sensitivity
 
-Example 4:
+> Example 4:
+
 The command searches for the world "SOCiodemographic" which is the same as "sociodemographic" or "SOCIODEMOGRAPHIC" as -i is case insensitive, which is useful as if we don't know whether it is lower or upper case that the author puts in. 
 
 Command:
@@ -126,7 +127,7 @@ Output:
     consumption habits and select sociodemographic
     on lifetime fish consumption and select sociodemographic
 
-Example 5:
+> Example 5:
 
 The format is grep -i "STRing" "Filename, cannot be directory". It cannot search thru directory unlike grep -r. This could be useful if we know which file we are working at. 
 
@@ -139,7 +140,7 @@ Output:
     grep: biomed: Is a directory
 
 
-Example 6:
+> Example 6:
 
 The output is blocks of textes of where the word is located that. It is useful if the word is capitalized. If we are using usual command without -r which are case sensitive, we could miss words that are in the begining of a sentence.
 
@@ -178,4 +179,56 @@ Output:
         program. Rather, Bin Ladin selectively provided startup funds to new groups or money
 
 
-## Count the lines where strings are matched with -c option
+## Count the lines where strings are appeared or resided
+
+> Example 7:
+
+grep -c counts the total number of lines where the string pattern matched. Searching for "New York" within the file chapter-5.txt under 911report, the string appears twice we can check if the count is right by just using grep without the options/extensions. 
+
+Command:
+
+    grep -c "New York" 911report/chapter-5.txt
+
+Output: 
+
+    2
+
+> Example 8:
+
+ As it counts the number of lines the word shows up, it is useful to get an general idea of how often the string appears. Especially, when the string appears very often, it would be difficult to count by ourselves. 
+
+Command:
+
+    grep -c Boston 911report/chapter-1.txt
+
+Output: 
+
+    36
+
+> Example 9:
+
+Using -c -r together, it gives a list of name of each file within the directories and its corresponding count of lines the word is matched. It is useful to get an general idea of how often the string appears within each file of the subdiretory, so we know which file to look into for later use.
+
+Command:
+
+    grep -c -r "Hi" government/About_LSC
+
+Output: 
+
+    government/About_LSC/LegalServCorp_v_VelazquezSyllabus.txt:0
+    government/About_LSC/Progress_report.txt:0
+    government/About_LSC/Strategic_report.txt:2
+    government/About_LSC/Comments_on_semiannual.txt:0
+    government/About_LSC/Special_report_to_congress.txt:2
+    government/About_LSC/CONFIG_STANDARDS.txt:1
+    government/About_LSC/commission_report.txt:9
+    government/About_LSC/LegalServCorp_v_VelazquezDissent.txt:0
+    government/About_LSC/ONTARIO_LEGAL_AID_SERIES.txt:1
+    government/About_LSC/LegalServCorp_v_VelazquezOpinion.txt:0
+    government/About_LSC/diversity_priorities.txt:1
+    government/About_LSC/reporting_system.txt:0
+    government/About_LSC/State_Planning_Report.txt:2
+    government/About_LSC/Protocol_Regarding_Access.txt:0
+    government/About_LSC/ODonnell_et_al_v_LSCdecision.txt:0
+    government/About_LSC/conference_highlights.txt:0
+    government/About_LSC/State_Planning_Special_Report.txt:0
