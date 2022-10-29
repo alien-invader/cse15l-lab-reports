@@ -179,7 +179,7 @@ Output:
         program. Rather, Bin Ladin selectively provided startup funds to new groups or money
 
 
-## Count the lines where strings are appeared or resided
+## `grep -c` : Count the lines where strings are appeared or resided
 
 > Example 7:
 
