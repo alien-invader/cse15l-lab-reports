@@ -1,12 +1,3 @@
-Search any line that contains the word in filename on Linux:
-grep 'word' filename
-Perform a case-insensitive search for the word ‘bar’ in Linux and Unix:
-grep -i 'bar' file1
-Look for all files in the current directory and in all of its subdirectories in Linux for the word ‘httpd’:
-grep -R 'httpd' .
-Search and display the total number of times that the string ‘nixcraft’ appears in a file named frontpage.md:
-
-
 # Lab Command - `grep`
 
 
