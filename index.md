@@ -1,6 +1,8 @@
 # Hello, Welcome to Elaine's World!
 Today is a **good** _day_. Below are my lab reports for CSE15L Fall 2022. 
 
+[Week 7 Lab Report 4 - Vim](https://alien-invader.github.io/cse15l-lab-reports/lab-report-5-week-9.html)
+
 [Week 7 Lab Report 4 - Vim](https://alien-invader.github.io/cse15l-lab-reports/lab-report-4-week-7.html)
 
 [Week 5 Lab Report 3 - Commands](https://alien-invader.github.io/cse15l-lab-reports/lab-report-3-week-5.html)
