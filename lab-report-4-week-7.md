@@ -9,7 +9,7 @@ At first, we decided to use `:%s/start/base/g` where we can find each occurrence
 
 Looking at it step by step:
 
-```:12,26s/start/base g``` takes us to our first instance of start in the code between line 12 and line 26 as we specified in the command. It would substitue "start" by "base". The command follows the pattern :[range]s/{pattern}/{string}/[flags] [count]
+```:12,26s/start/base g``` takes us to our first instance of start in the code between line 12 and line 26 as we specified in the command. It would substitue "start" by "base". The command follows the pattern :[range]s/{pattern}/{string}/[flags] 
 
 1. ```:12,26s```
 This character indicates a range from the 12th line to the 26th line of the file. The range is inclusive, which means that the first and last lines are included in the range. If I want to search and replace the pattern in the entire file, use the percentage character % as a range. When no range is specified the substitute command operates only in the current line.
